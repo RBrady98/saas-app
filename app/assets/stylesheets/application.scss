@@ -1,4 +1,6 @@
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 //Typography Style
 h1, h2, h3 {
   font-family: 'Open Sans', 'sans-serif';
@@ -32,6 +34,11 @@ h1, h2, h3 {
 
 .navbar-brand {
   color: white;
+}
+
+//Move font awesome icon
+.fa {
+  margin-right: 10px;
 }
 
 //Home page styles
