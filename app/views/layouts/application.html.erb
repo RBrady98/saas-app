@@ -11,20 +11,23 @@
 
   <body>
     <%# Navbar %>
-    <nav class="navbar navbar-expand-lg">
-      <%= link_to "/", class: "navbar-brand" do %>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <%= link_to root_path, class: "navbar-brand" do %>
         <i class="fa fa-group"></i>
         DevMatch
       <% end %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <%= link_to "About", "/about", class: "nav-link" %>
+          <li class="nav-item acgive">
+            <%= link_to "About", about_path, class: "nav-link" %>
           </li>
         </ul>
       </div>
     </nav>
-
+    
     <%= yield %>
   </body>
 </html>
